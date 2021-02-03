@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+    <!-- datepicker -->
+    <link rel="stylesheet" href="wwwroot/css/bootstrap-datepicker3.min.css" />
+    <link
+      rel="stylesheet"
+      href="wwwroot/css/bootstrap-datepicker3.standalone.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="wwwroot/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col todoPostsCol"></div>
+        <div class="col">
+          <div id="accordion">
+            <div class="card" id="addCard">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Add
+                  </button>
+                </h5>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse"
+                aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <div class="isAuthText"><h1>Not authenticated!</h1></div>
+                <div class="card-body isAuth">
+                  <div>
+                    <label for="addTitleInput">Title</label
+                    ><input
+                      type="text"
+                      class="form-control"
+                      id="addTitleInput"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="addDescInput">Description</label>
+                    <textarea
+                      class="form-control"
+                      id="addDescInput"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <div class="input-group date">
+                    <label for="addDateInput">Date</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="addDateInput"
+                      placeholder="yyyy-mm-dd"
+                    /><span class="input-group-addon"
+                      ><i class="glyphicon glyphicon-th"></i
+                    ></span>
+                  </div>
+                  <div>
+                    <label for="addTimeInput">Time</label>
+                    <input
+                      type="time"
+                      class="form-control"
+                      id="addTimeInput"
+                      placeholder="hh:mm"
+                    />
+                  </div>
+                  <div>
+                    <button id="addBtn" type="button" class="btn btn-success">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="editCard">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Edit
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="isAuthText"><h1>Not authenticated!</h1></div>
+                <div class="isAuthEditText"><h1>Select item</h1></div>
+                <div class="card-body isAuthEditCard">
+                  <div>
+                    <label for="titleInput">Title</label
+                    ><input
+                      type="text"
+                      class="form-control"
+                      id="titleInput"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="descInput">Description</label>
+                    <textarea
+                      class="form-control"
+                      id="descInput"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <div class="input-group date">
+                    <label for="dateInput">Date</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="dateInput"
+                      placeholder="yyyy-mm-dd"
+                    /><span class="input-group-addon"
+                      ><i class="glyphicon glyphicon-th"></i
+                    ></span>
+                  </div>
+                  <div>
+                    <label for="timeInput">Time</label>
+                    <input
+                      type="time"
+                      class="form-control"
+                      id="timeInput"
+                      placeholder="hh:mm"
+                    />
+                  </div>
+                  <div>
+                    <button
+                      style="float: left; margin-bottom: 10px"
+                      id="editBtn"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      Edit
+                    </button>
+                    <button
+                      style="float: right; margin-bottom: 10px"
+                      id="deleteBtn"
+                      type="button"
+                      class="btn btn-danger"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="authCard">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Auth
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <div>
+                    <label for="authCode">Auth Code</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="authCode"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <button
+                      id="authSetBtn"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      Set
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap, jquery, popperjs -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- datepicker -->
+    <script src="wwwroot/js/bootstrap-datepicker.min.js"></script>
+    <!-- AJAX -->
+    <script>
+      $('.input-group.date').datepicker({
+        format: 'yyyy-mm-dd',
+        todayBtn: 'linked',
+      });
+
+      //Render the HTML
+      function renderHtml(data) {
+        var htmlString = '';
+
+        console.log(data);
+
+        for (i = 0; i < data.length; i++) {
+          if (data[i].date === null) {
+            data[i].date = '';
+          }
+
+          htmlString += `<div data-id="${data[i].id}" class="todoPost">
+            <h2 class="todoTitle">${data[i].title}</h2>
+            <p class="todoData">${data[i].description}</p>
+            <h6 class="todoDate">${data[i].date}</h6>
+            <h6 class="todoTime">${data[i].time}</h6>
+          </div>`;
+        }
+
+        $('.todoPostsCol').html(htmlString);
+      }
+
+      // AUTH AJAX
+      var authorization = '';
+      $('.isAuth').hide();
+      $('#authSetBtn').click(function () {
+        var authKey = $('#authCode').val();
+        authorization = authKey;
+        $.ajax({
+          type: 'POST',
+          url: 'http://217.195.200.69:5000/task4/auth/',
+          data: {
+            auth: authKey,
+          },
+          success: function (data, status) {
+            Swal.fire({
+              icon: 'success',
+              title: 'Auth successful',
+            });
+            currentItems = data.data;
+            renderHtml(data.data);
+            $('.isAuthText').hide();
+            $('.isAuthEditCard').hide();
+            $('.isAuthEditText').show();
+            $('.isAuth').show();
+          },
+          statusCode: {
+            403: function () {
+              Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Auth failed!',
+              });
+              $('.todoPostsCol').html('');
+              $('.isAuth').hide();
+              $('.isAuthText').show();
+              $('.isAuthEditText').hide();
+              return;
+            },
+          },
+        });
+      });
+
+      // ADD AJAX -------------------- CLEAR FORM AFTER ADD
+      $('#addBtn').click(function () {
+        var addTitle = $('#addTitleInput').val();
+        var addDescription = $('#addDescInput').val();
+        var addDate = $('#addDateInput').val();
+        var addTime = $('#addTimeInput').val();
+
+        console.log(addDate);
+
+        if (addTitle === null || addTitle === undefined || addTitle === '') {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Title is required to add item to the list!',
+          });
+        } else {
+          $.ajax({
+            type: 'POST',
+            url: 'http://217.195.200.69:5000/task4/add/',
+            data: {
+              auth: authorization,
+              title: addTitle,
+              description: addDescription,
+              date: addDate,
+              time: addTime,
+            },
+            success: function (data, status) {
+              console.log(data);
+              console.log(status);
+              if (data.data.date === null) {
+                data.data.date = '';
+              }
+              var htmlString = `<div data-id="${data.data.id}" class="todoPost">
+            <h2 class="todoTitle">${data.data.title}</h2>
+            <p class="todoData">${data.data.description}</p>
+            <h6 class="todoDate">${data.data.date}</h6>
+            <h6 class="todoTime">${data.data.time}</h6>
+          </div>`;
+              $('.todoPostsCol').append(htmlString);
+              Swal.fire({
+                icon: 'success',
+                title: 'Successfuly added new item!',
+              });
+              $('#addTitleInput').val(null);
+              $('#addDescInput').val(null);
+              $('#addDateInput').val(null);
+              $('#addTimeInput').val(null);
+            },
+          });
+        }
+      });
+
+      $('.isAuthEditCard').hide();
+      $('.isAuthEditText').hide();
+
+      // Edit and Delete AJAX
+      $('.todoPostsCol').unbind().click(function () {
+        $('.todoPost').unbind().click(function () {
+          var post = $(this);
+          var postId = post.data('id');
+          var postTitle = post.children('.todoTitle').html();
+          var postData = post.children('.todoData').html();
+          var postDate = post.children('.todoDate').html();
+          var postTime = post.children('.todoTime').html();
+
+          $('.isAuthEditCard').show();
+          $('.isAuthEditText').hide();
+
+          $('#titleInput').val(postTitle);
+          $('#descInput').val(postData);
+          $('#dateInput').val(postDate);
+          $('#timeInput').val(postTime);
+
+          $('#deleteBtn').unbind().click(function () {
+            Swal.fire({
+              title: 'Are you sure?',
+              text: "You won't be able to revert this!",
+              icon: 'warning',
+              showCancelButton: true,
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              confirmButtonText: 'Yes, delete it!',
+            }).then((result) => {
+              if (result.isConfirmed) {
+                $.ajax({
+                  type: 'POST',
+                  url: 'http://217.195.200.69:5000/task4/delete/',
+                  data: {
+                    auth: authorization,
+                    id: postId,
+                  },
+                  success: function (data, status) {
+                    console.log(data);
+                    if (data.ok === true) {
+                      Swal.fire(
+                        'Deleted!',
+                        `${postTitle} deleted successfuly`,
+                        'success'
+                      );
+                      $('#titleInput').val(null);
+                      $('#descInput').val(null);
+                      $('#dateInput').val(null);
+                      $('#timeInput').val(null);
+                      post.remove();
+                      $('.isAuthEditCard').hide();
+                      $('.isAuthEditText').show();
+                    } else {
+                      Swal.fire(
+                        'Error!',
+                        `${postTitle} has been not found`,
+                        'error'
+                      );
+                    }
+                  },
+                });
+              }
+            });
+          });
+          $('#editBtn').unbind().click(function () {
+            console.log('clicked');
+            $.ajax({
+              type: 'POST',
+              url: 'http://217.195.200.69:5000/task4/edit',
+              data: {
+                id: postId,
+                auth: authorization,
+                title: $('#titleInput').val(),
+                description: $('#descInput').val(),
+                date: $('#dateInput').val(),
+                time: $('#timeInput').val(),
+              },
+              success: function (data, status) {
+                console.log(data);
+                if (data.ok === false) {
+                  Swal.fire(
+                    'Error!',
+                    'There has been some error editing',
+                    'error'
+                  );
+                } else {
+                  var htmlString = `
+            <h2 class="todoTitle">${data.data.title}</h2>
+            <p class="todoData">${data.data.description}</p>
+            <h6 class="todoDate">${data.data.date}</h6>
+            <h6 class="todoTime">${data.data.time}</h6>
+          `;
+                  post.html(htmlString);
+                  $('#titleInput').val(null);
+                  $('#descInput').val(null);
+                  $('#dateInput').val(null);
+                  $('#timeInput').val(null);
+                  Swal.fire({
+                    icon: 'success',
+                    title: 'Edited successfuly!',
+                  });
+
+                  $('.isAuthEditCard').hide();
+                  $('.isAuthEditText').show();
+                }
+              },
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

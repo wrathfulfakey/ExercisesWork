@@ -1,0 +1,42 @@
+.col {
+  margin-top: 30px;
+  border: 1px solid gray;
+  padding: 0;
+}
+
+.todoPost {
+  display: block;
+  padding: 10px 10px 30px 10px;
+  border: 1px solid gray;
+  margin: 10px;
+}
+
+.todoPost:hover {
+  background: rgb(154, 202, 154);
+}
+
+.todoDate {
+  float: left;
+}
+
+.todoTime {
+  float: right;
+}
+
+.card-body div:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+#accordion {
+  padding: 15px;
+}
+
+label {
+  width: 100%;
+}
+
+.isAuthText,
+.isAuthEditText {
+  font-weight: 900;
+  padding: 20px;
+}

@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- Style CSS-->
+    <link rel="stylesheet" href="wwwroot/css/style.css" />
+  </head>
+  <body>
+    <!-- Nav Start -->
+    <nav class="navbar navbar-expand-md navbar-light" style="z-index: 1">
+      <p class="navbar-brand">.My New Company</p>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#nav-items"
+        aria-controls="nav-items"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav-items">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#demos">Demos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pages">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#elements">Elements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Nav End -->
+    <!-- Carousel Start -->
+    <div
+      id="topCarousel"
+      class="carousel slide"
+      data-ride="carousel"
+      data-interval="false"
+    >
+      <ol class="carousel-indicators" style="justify-content: start">
+        <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#topCarousel" data-slide-to="1"></li>
+        <li data-target="#topCarousel" data-slide-to="2"></li>
+        <li data-target="#topCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active caro1" data-step="1">
+          <div class="carousel-caption d-md-block">
+            <h6 class="contTitle">Multipurpose #1</h6>
+            <p class="carouselTitle">
+              Sketch Template for People Who Want More
+            </p>
+            <p class="carouselUnderTitle">
+              Will it be used for your home, your office or perhaps even your
+              home office combo?
+            </p>
+            <div class="phoneContact">
+              <div class="form-group">
+                <label>Your phone</label>
+                <input type="tel" class="form-control" placeholder="+8 800" />
+              </div>
+              <button type="button" class="btn btn-primary contactMeBtn">
+                Contact Me
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item caro2" data-step="2">
+          <div class="carousel-caption d-md-block">
+            <h6 class="contTitle">Multipurpose #2</h6>
+            <p class="carouselTitle">
+              Sketch Template for People Who Want More
+            </p>
+            <p class="carouselUnderTitle">
+              Will it be used for your home, your office or perhaps even your
+              home office combo?
+            </p>
+            <div class="phoneContact">
+              <div class="form-group">
+                <label>Your phone</label>
+                <input type="tel" class="form-control" placeholder="+8 800" />
+              </div>
+              <button type="button" class="btn btn-primary contactMeBtn">
+                Contact Me
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item caro3" data-step="3">
+          <div class="carousel-caption d-md-block">
+            <h6 class="contTitle">Multipurpose #3</h6>
+            <p class="carouselTitle">
+              Sketch Template for People Who Want More
+            </p>
+            <p class="carouselUnderTitle">
+              Will it be used for your home, your office or perhaps even your
+              home office combo?
+            </p>
+            <div class="phoneContact">
+              <div class="form-group">
+                <label>Your phone</label>
+                <input type="tel" class="form-control" placeholder="+8 800" />
+              </div>
+              <button type="button" class="btn btn-primary contactMeBtn">
+                Contact Me
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item caro4" data-step="4">
+          <div class="carousel-caption d-md-block">
+            <h6 class="contTitle">Multipurpose #4</h6>
+            <p class="carouselTitle">
+              Sketch Template for People Who Want More
+            </p>
+            <p class="carouselUnderTitle">
+              Will it be used for your home, your office or perhaps even your
+              home office combo?
+            </p>
+            <div class="phoneContact">
+              <div class="form-group">
+                <label style="text-align: left">Your phone</label>
+                <input type="tel" class="form-control" placeholder="+8 800" />
+              </div>
+              <button type="button" class="btn btn-primary contactMeBtn">
+                Contact Me
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#topCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#topCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Carousel Progress Bar-->
+    <div class="progress">
+      <div
+        id="topCarouselProgressBar"
+        class="progress-bar progress-bar-success"
+        role="progressbar"
+        aria-valuenow="20"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 20%"
+      ></div>
+    </div>
+    <!-- Carousel End -->
+    <!-- Features Start -->
+    <div id="features" class="container">
+      <div class="row">
+        <div class="col">
+          <p class="contTitle">Luxury Design</p>
+          <h1>Perfect circles and rectangles</h1>
+          <p>
+            Efficiently unleash cross-media information without cross-media
+            value. Quickly maximize timely deliverables for real-time schemas.
+            Dramatically maintain clicks-and-mortar solutions without functional
+            solutions.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <i id="featureIcon" class="far fa-play-circle fa-4x"></i>
+          <h4>Easy interface</h4>
+          <p>
+            Capitalize on low hanging fruit to identify a ballpark value added
+            activity to beta test. Override the digital divide.
+          </p>
+        </div>
+        <div class="col">
+          <i id="featureIcon" class="fas fa-headphones-alt fa-4x"></i>
+          <h4>Shortcode manager</h4>
+          <p>
+            Collaboratively administrate empowered markets via plug-and-play
+            networks. Dynamically procrastinate.
+          </p>
+        </div>
+        <div class="col">
+          <i id="featureIcon" class="fas fa-university fa-4x"></i>
+          <h4>Solid code</h4>
+          <p>
+            Leverage agile frameworks to provide a robust synopsis for high
+            level overviews. Iterative approaches.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <i id="featureIcon" class="fas fa-anchor fa-4x"></i>
+          <h4>Premium design</h4>
+          <p>
+            Objectively innovate empowered manufactured products whereas
+            parallel platforms. Holisticly predominate extensible testing.
+          </p>
+        </div>
+        <div class="col">
+          <i id="featureIcon" class="fas fa-university fa-4x"></i>
+          <h4>Favorites</h4>
+          <p>
+            Bring to the table win-win survival strategies to ensure proactive
+            domination. At the end of the day, going forward.
+          </p>
+        </div>
+        <div class="col">
+          <i id="featureIcon" class="fas fa-university fa-4x"></i>
+          <h4>Lifetime updates</h4>
+          <p>
+            Leverage agile frameworks to provide a robust synopsis for high
+            level overviews. Iterative approaches to corporate.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Features End-->
+    <!-- Video Start -->
+    <div id="videoFeature" class="container">
+      <div class="row" id="first">
+        <div class="col-xl-7 col-sm">
+          <iframe
+            class="responsive-iframe"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          >
+          </iframe>
+        </div>
+        <div class="col-xl-5 col-sm">
+          <p class="contTitle">You should to see</p>
+          <h3 id="videoTitle">Carefully crafted with love to small things</h3>
+          <p>
+            The Myspace page defines the individual, his or her characteristics,
+            traits, personal choices and the overall personality of the person.
+          </p>
+          <button type="button" class="btn btn-outline-primary">
+            Contact us
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Video End -->
+    <!-- Quotes Start -->
+    <div id="quotes" class="container-fluid">
+      <div class="row">
+        <div
+          class="col-lg-6 col-sm"
+          style="
+            background-image: url('https://res.cloudinary.com/dojs8gtey/image/upload/v1606483903/Square_qpl3fy.png');
+            height: 400px;
+          "
+        >
+          <p id="quote">
+            <i class="fas fa-quote-right"></i>
+            Believe in yourself! Have faith in your abilities! Without a humble
+            but reasonable confidence in your own powers you cannot be
+          </p>
+          <p id="author">Norman Vincent Peale</p>
+        </div>
+        <div class="col-lg-6 col-sm" style="z-index: -1">
+          <img
+            src="https://t0.gstatic.com/images?q=tbn:ANd9GcTLLU8Ph8jyVBvzXE4qw4ugTeNGJy8_oSoSZiFwFLVu1FN3bNO20bOFFDMJJ1eM"
+            alt="author img"
+            class="img-responsive"
+            style="
+              height: 400px;
+              width: 100%;
+              object-fit: cover;
+              margin-bottom: 50px;
+            "
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Quotes End -->
+    <!-- Team Start -->
+    <div id="team" class="container">
+      <div class="row">
+        <div class="col">
+          <p class="contTitle">Human Beings</p>
+          <h1>Our awesome team</h1>
+        </div>
+      </div>
+      <div id="teamMembers">
+        <div class="row">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <img
+                  class="card-img"
+                  src="https://bg.hoboetc.com/images/novosti-i-obshestvo/makkrori-helen-rost-filmografiya-foto-v-molodosti_5.jpg"
+                  alt="Lenora Walton"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <h3 class="card-title">Lenora Walton</h3>
+                  <p class="card-text">Chief Analytics Officer</p>
+                  <div class="social-links">
+                    <a
+                      href="https://twitter.com/home"
+                      target="_blank"
+                      class="fa fa-twitter"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="fa fa-facebook"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="fa fa-linkedin"
+                      aria-hidden="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <img
+                  class="card-img"
+                  src="https://www.thesun.co.uk/wp-content/uploads/2018/05/NINTCHDBPICT000438768061-e1600614294781.jpg"
+                  alt="Landon Howard"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <h3 class="card-title">Landon Howard</h3>
+                  <p class="card-text">Chief Technical Officer</p>
+                  <div class="social-links">
+                    <a
+                      href="https://twitter.com/home"
+                      target="_blank"
+                      class="fa fa-twitter"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="fa fa-facebook"
+                      aria-hidden="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <img
+                  class="card-img img-fluid"
+                  src="https://www.thesun.ie/wp-content/uploads/sites/3/2019/10/NINTCHDBPICT000527571092-e1570116963211.jpg"
+                  alt="Zachary Clark"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <h3 class="card-title">Zachary Clark</h3>
+                  <p class="card-text">Technology Officer Officer</p>
+                  <div class="social-links">
+                    <a
+                      href="https://twitter.com/home"
+                      target="_blank"
+                      class="fa fa-twitter"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="fa fa-facebook"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="fa fa-linkedin"
+                      aria-hidden="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <img
+                  class="card-img"
+                  src="https://m.media-amazon.com/images/M/MV5BZmRmYjQ1MTEtYjZkOC00YjUyLTllODgtYzdiOTg3Y2UyM2NmXkEyXkFqcGdeQXVyMjI3NzYyOTA@._V1_UY317_CR12,0,214,317_AL_.jpg"
+                  alt="Isabella Bush"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <h3 class="card-title">Isabella Bush</h3>
+                  <p class="card-text">Chief Compliance Officer</p>
+                  <div class="social-links">
+                    <a
+                      href="https://twitter.com/home"
+                      target="_blank"
+                      class="fa fa-twitter"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="fa fa-facebook"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="fa fa-linkedin"
+                      aria-hidden="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <img
+                  class="card-img img-fluid"
+                  src="https://media.wonderlandmagazine.com/uploads/2017/05/MG_7125-1.jpg"
+                  alt="Lenora Walton"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <h3 class="card-title">Lenora Walton</h3>
+                  <p class="card-text">Chief Analytics Officer</p>
+                  <div class="social-links">
+                    <a
+                      href="https://twitter.com/home"
+                      target="_blank"
+                      class="fa fa-twitter"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="fa fa-facebook"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="fa fa-linkedin"
+                      aria-hidden="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <img
+                  class="card-img"
+                  src="https://thechap.co.uk/wp-content/uploads/2017/11/paul-anderson.jpg"
+                  alt="Landon Howard"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <h3 class="card-title">Landon Howard</h3>
+                  <p class="card-text">Chief Technical Officer</p>
+                  <div class="social-links">
+                    <a
+                      href="https://twitter.com/home"
+                      target="_blank"
+                      class="fa fa-twitter"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="fa fa-facebook"
+                      aria-hidden="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: none" class="row" id="moreTeammates">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <img
+                  class="card-img"
+                  src="https://bg.hoboetc.com/images/novosti-i-obshestvo/makkrori-helen-rost-filmografiya-foto-v-molodosti_5.jpg"
+                  alt="Lenora Walton"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <h3 class="card-title">Lenora Walton</h3>
+                  <p class="card-text">Chief Analytics Officer</p>
+                  <div class="social-links">
+                    <a
+                      href="https://twitter.com/home"
+                      target="_blank"
+                      class="fa fa-twitter"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="fa fa-facebook"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="fa fa-linkedin"
+                      aria-hidden="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <img
+                  class="card-img"
+                  src="https://www.thesun.co.uk/wp-content/uploads/2018/05/NINTCHDBPICT000438768061-e1600614294781.jpg"
+                  alt="Landon Howard"
+                />
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  <h3 class="card-title">Landon Howard</h3>
+                  <p class="card-text">Chief Technical Officer</p>
+                  <div class="social-links">
+                    <a
+                      href="https://twitter.com/home"
+                      target="_blank"
+                      class="fa fa-twitter"
+                      aria-hidden="true"
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="fa fa-facebook"
+                      aria-hidden="true"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a id="showTeammatesLink" onclick="showTeammates()"
+        >Show more teammates</a
+      >
+    </div>
+    <!-- Team End -->
+    <!-- Latest Posts Start -->
+    <div id="latestPostsTitle" class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <p class="contTitle">Publications</p>
+          <h1>Latest Posts</h1>
+          <p>
+            Efficiently unleash cross-media information without cross-media
+            value. Quickly maximize timely deliverables for real-time schemas.
+            Dramatically maintain clicks-and-mortar solutions without functional
+            solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="latestPosts" class="container-fluid">
+      <div id="blogPosts" class="row">
+        <div
+          class="MultiCarousel"
+          data-items="1,3,5,6"
+          data-slide="1"
+          id="MultiCarousel"
+          data-interval="1000"
+        >
+          <div class="MultiCarousel-inner">
+            <div class="item">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="https://media-exp1.licdn.com/dms/image/C4D0BAQEko6uLz7XylA/company-logo_200_200/0?e=2159024400&v=beta&t=a1kve4i0YyusChyNR_Cvvn2vnHNUHhZ4H2rnYCxjQhU"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="dateMultiCarousel">
+                    <i class="far fa-calendar-alt"></i> 10 Feb 2018
+                    <span class="authorMultiCarousel"
+                      ><i class="far fa-user"></i> Robinson</span
+                    >
+                  </p>
+                  <h4 class="card-title">
+                    Microsoft Patch Management For Home Users
+                  </h4>
+                  <p class="card-text">
+                    <span class="tags">
+                      <i class="fas fa-tags"></i>
+                      <a href="https://www.microsoft.com/bg-bg" target="_blank"
+                        >microsoft</a
+                      >,
+                      <a
+                        href="https://en.wikipedia.org/wiki/Patch_(computing)"
+                        target="_blank"
+                        >patch</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Woman_mechanic_working_on_engine_%28cropped%29.jpeg/800px-Woman_mechanic_working_on_engine_%28cropped%29.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="dateMultiCarousel">
+                    <i class="far fa-calendar-alt"></i> 03 May 2018
+                    <span class="authorMultiCarousel"
+                      ><i class="far fa-user"></i> Olive Steele</span
+                    >
+                  </p>
+                  <h4 class="card-title">
+                    For Women Only Your Computer Usage Could Cost
+                  </h4>
+                  <p class="card-text">
+                    <span class="tags">
+                      <i class="fas fa-tags"></i>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Woman"
+                        target="_blank"
+                        >women</a
+                      >,
+                      <a
+                        href="https://en.wikipedia.org/wiki/Woman"
+                        target="_blank"
+                        >only</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Pong_%2828684491143%29.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="dateMultiCarousel">
+                    <i class="far fa-calendar-alt"></i> 05 Jan 2018
+                    <span class="authorMultiCarousel"
+                      ><i class="far fa-user"></i> Kenneth</span
+                    >
+                  </p>
+                  <h4 class="card-title">
+                    Video Games Playing With Imagination
+                  </h4>
+                  <p class="card-text">
+                    <span class="tags">
+                      <i class="fas fa-tags"></i>
+                      <a href="https://www.youtube.com/" target="_blank"
+                        >video</a
+                      >,
+                      <a
+                        href="https://en.wikipedia.org/wiki/Video_game"
+                        target="_blank"
+                        >game</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="https://static.timesofisrael.com/blogs/uploads/2019/10/bhanu.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="dateMultiCarousel">
+                    <i class="far fa-calendar-alt"></i> 02 Dec 2020
+                    <span class="authorMultiCarousel"
+                      ><i class="far fa-user"></i> Vladislav</span
+                    >
+                  </p>
+                  <h4 class="card-title">Software Engineering And Beyond</h4>
+                  <p class="card-text">
+                    <span class="tags">
+                      <i class="fas fa-tags"></i>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Software_engineering"
+                        target="_blank"
+                        >software engineering</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="https://blog.hubspot.com/hubfs/How-to-make-a-marketing-video.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="dateMultiCarousel">
+                    <i class="far fa-calendar-alt"></i> 06 Jan 2021
+                    <span class="authorMultiCarousel"
+                      ><i class="far fa-user"></i> Video Maker</span
+                    >
+                  </p>
+                  <h4 class="card-title">
+                    Professional Video Making And Editing
+                  </h4>
+                  <p class="card-text">
+                    <span class="tags">
+                      <i class="fas fa-tags"></i>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Video"
+                        target="_blank"
+                        >Video</a
+                      >,
+                      <a
+                        href="https://en.wikipedia.org/wiki/Editing"
+                        target="_blank"
+                        >Editing</a
+                      >,
+                      <a href="https://en.wikipedia.org/wiki/Video"
+                        >Making</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="https://media-exp1.licdn.com/dms/image/C4D0BAQEko6uLz7XylA/company-logo_200_200/0?e=2159024400&v=beta&t=a1kve4i0YyusChyNR_Cvvn2vnHNUHhZ4H2rnYCxjQhU"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="dateMultiCarousel">
+                    <i class="far fa-calendar-alt"></i> 10 Feb 2018
+                    <span class="authorMultiCarousel"
+                      ><i class="far fa-user"></i> Robinson</span
+                    >
+                  </p>
+                  <h4 class="card-title">
+                    Microsoft Patch Management For Home Users
+                  </h4>
+                  <p class="card-text">
+                    <span class="tags">
+                      <i class="fas fa-tags"></i>
+                      <a href="https://www.microsoft.com/bg-bg" target="_blank"
+                        >microsoft</a
+                      >,
+                      <a
+                        href="https://en.wikipedia.org/wiki/Patch_(computing)"
+                        target="_blank"
+                        >patch</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Woman_mechanic_working_on_engine_%28cropped%29.jpeg/800px-Woman_mechanic_working_on_engine_%28cropped%29.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="dateMultiCarousel">
+                    <i class="far fa-calendar-alt"></i> 03 May 2018
+                    <span class="authorMultiCarousel"
+                      ><i class="far fa-user"></i> Olive Steele</span
+                    >
+                  </p>
+                  <h4 class="card-title">
+                    For Women Only Your Computer Usage Could Cost
+                  </h4>
+                  <p class="card-text">
+                    <span class="tags">
+                      <i class="fas fa-tags"></i>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Woman"
+                        target="_blank"
+                        >women</a
+                      >,
+                      <a
+                        href="https://en.wikipedia.org/wiki/Woman"
+                        target="_blank"
+                        >only</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Pong_%2828684491143%29.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="dateMultiCarousel">
+                    <i class="far fa-calendar-alt"></i> 05 Jan 2018
+                    <span class="authorMultiCarousel"
+                      ><i class="far fa-user"></i> Kenneth</span
+                    >
+                  </p>
+                  <h4 class="card-title">
+                    Video Games Playing With Imagination
+                  </h4>
+                  <p class="card-text">
+                    <span class="tags">
+                      <i class="fas fa-tags"></i>
+                      <a href="https://www.youtube.com/" target="_blank"
+                        >video</a
+                      >,
+                      <a
+                        href="https://en.wikipedia.org/wiki/Video_game"
+                        target="_blank"
+                        >game</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="https://static.timesofisrael.com/blogs/uploads/2019/10/bhanu.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="dateMultiCarousel">
+                    <i class="far fa-calendar-alt"></i> 02 Dec 2020
+                    <span class="authorMultiCarousel"
+                      ><i class="far fa-user"></i> Vladislav</span
+                    >
+                  </p>
+                  <h4 class="card-title">Software Engineering And Beyond</h4>
+                  <p class="card-text">
+                    <span class="tags">
+                      <i class="fas fa-tags"></i>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Software_engineering"
+                        target="_blank"
+                        >software engineering</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card mb-2">
+                <img
+                  class="card-img-top"
+                  src="https://blog.hubspot.com/hubfs/How-to-make-a-marketing-video.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <p class="dateMultiCarousel">
+                    <i class="far fa-calendar-alt"></i> 06 Jan 2021
+                    <span class="authorMultiCarousel"
+                      ><i class="far fa-user"></i> Video Maker</span
+                    >
+                  </p>
+                  <h4 class="card-title">
+                    Professional Video Making And Editing
+                  </h4>
+                  <p class="card-text">
+                    <span class="tags">
+                      <i class="fas fa-tags"></i>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Video"
+                        target="_blank"
+                        >Video</a
+                      >,
+                      <a
+                        href="https://en.wikipedia.org/wiki/Editing"
+                        target="_blank"
+                        >Editing</a
+                      >,
+                      <a href="https://en.wikipedia.org/wiki/Video"
+                        >Making</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary leftLst"><</button>
+          <button class="btn btn-primary rightLst">></button>
+        </div>
+      </div>
+    </div>
+    <!-- Latest Posts End -->
+    <!-- Newsletter Start -->
+    <div class="subscription-wrapper">
+      <div
+        class="d-flex subscription-content justify-content-between align-items-center flex-column flex-md-row text-center text-md-left"
+      >
+        <h3 class="flex-fill">Subscribe to our newsletter</h3>
+        <form action="#" class="row flex-fill">
+          <div class="col-lg-7 my-md-2 my-2 input-group">
+            <div class="input-group-prepend">
+              <span id="newsletterGray" class="input-group-text"></span>
+            </div>
+            <input
+              type="email"
+              class="form-control px-4 text-center text-md-left"
+              id="email"
+              placeholder="Your Email"
+              name="email"
+            />
+          </div>
+          <div class="col-lg-5 my-md-2 my-2">
+            <button type="submit" class="btn btn-lg border-0">
+              Subscribe Now
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Newsletter End -->
+    <!-- Key Features Start -->
+    <div id="keyFeatures" class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <p class="contTitle">Key features</p>
+          <h1>Why choose us</h1>
+          <p>
+            Efficiently unleash cross-media information without cross-media
+            value. Quickly maximize timely deliverables for real-time schemas.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <span><i class="fas fa-circle fa-xs"></i></span>
+          <p>
+            Responsive designs that will fit in with any type of website design.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <span><i class="fas fa-circle fa-xs"></i></span>
+          <p>Create a fast-loading website and offer the best experience.</p>
+        </div>
+        <div class="col-lg-3">
+          <span><i class="fas fa-circle fa-xs"></i></span>
+          <p>Get started with this mind-blowing theme filled of options.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Key Features End -->
+    <!-- FAQ Start -->
+    <div id="faqTitle" class="container">
+      <div class="row">
+        <div class="col">
+          <p class="contTitle">Useful Information</p>
+          <h1>Questions and Answers</h1>
+        </div>
+      </div>
+    </div>
+    <div id="faq" class="container-fluid px-0">
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+            src="https://cdn.searchenginejournal.com/wp-content/uploads/2018/09/25-of-the-Best-Examples-of-Effective-FAQ-Pages-1520x800.png"
+            alt="faq"
+          />
+        </div>
+        <div class="col-lg-4">
+          <ul>
+            <li>
+              <i class="fas fa-question-circle"></i>
+              <button type="button" class="btn btn-link collapsible">
+                Usage of your phone number
+              </button>
+              <div class="collapsibleContent">
+                <p>
+                  We ask for phone numbers because that's how WhatsApp
+                  identifies WhatsApp users, making it easier for you to message
+                  friends and family quickly.
+                </p>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-question-circle"></i>
+              <button type="button" class="btn btn-link collapsible">
+                Chatting with businesses
+              </button>
+              <div class="collapsibleContent">
+                <p>
+                  It’s easy to distinguish between a personal account and a
+                  business account on WhatsApp. In an individual chat, tap the
+                  contact’s name to view their profile. If they’re a business,
+                  their profile will include one of the following labels:
+                </p>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-question-circle"></i>
+              <button type="button" class="btn btn-link collapsible">
+                Expanded accordion
+              </button>
+              <div class="collapsibleContent">
+                <p>
+                  Capitalize on low hanging fruit to identify a ballpark value
+                  added activity to beta test. Override the digital divide with
+                  additional clickthroughs from DevOps. Nanotechnology immersion
+                  along the information highway will close the loop on focusing
+                  solely on the bottom line.
+                </p>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-question-circle"></i>
+              <button type="button" class="btn btn-link collapsible">
+                Usage of your phone number and address
+              </button>
+              <div class="collapsibleContent">
+                <p>
+                  We ask for phone numbers because that's how WhatsApp
+                  identifies WhatsApp users, making it easier for you to message
+                  friends and family quickly.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ End -->
+    <!-- Clients Start -->
+    <div id="clients" class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <p class="contTitle">Our partners</p>
+          <h1>Clients and partners</h1>
+          <p>
+            Efficiently unleash cross-media information without cross-media
+            value. Quickly maximize timely deliverables for real-time schemas.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <img
+            src="https://lh3.googleusercontent.com/proxy/xqPCBgrW9SSHhATIXHEtGxVeuHhLY3gwbeW5-qJ32C7HJeHghMfIJIFNNreRn6yvCq03144xPyAxVXEgs5VtYg"
+            alt="microsoft Logo"
+          />
+        </div>
+        <div class="col-lg-3">
+          <img
+            src="https://cdn.freelogovectors.net/wp-content/uploads/2018/09/razer-logo.png"
+            alt="razer Logo"
+          />
+          <div class="topClientDivider"></div>
+        </div>
+        <div class="col-lg-3">
+          <img
+            src="https://logo-load.com/uploads/posts/2016-02/1455630398_logo-steelseries.png"
+            alt="steelseries Logo"
+          />
+          <div class="topClientDivider"></div>
+        </div>
+        <div class="col-lg-3">
+          <img src="https://aimo.roccat.org/img/Logo.svg" alt="roccat Logo" />
+          <div class="topClientDivider"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <img
+            src="https://lh3.googleusercontent.com/proxy/xqPCBgrW9SSHhATIXHEtGxVeuHhLY3gwbeW5-qJ32C7HJeHghMfIJIFNNreRn6yvCq03144xPyAxVXEgs5VtYg"
+            alt="microsoft Logo"
+          />
+        </div>
+        <div class="col-lg-3">
+          <img
+            src="https://cdn.freelogovectors.net/wp-content/uploads/2018/09/razer-logo.png"
+            alt="razer Logo"
+          />
+          <div class="bottomClientDivider"></div>
+        </div>
+        <div class="col-lg-3">
+          <img
+            src="https://logo-load.com/uploads/posts/2016-02/1455630398_logo-steelseries.png"
+            alt="steelseries Logo"
+          />
+          <div class="bottomClientDivider"></div>
+        </div>
+        <div class="col-lg-3">
+          <img src="https://aimo.roccat.org/img/Logo.svg" alt="roccat Logo" />
+          <div class="bottomClientDivider"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Clients End -->
+    <div id="divider"></div>
+    <!-- Footer Start -->
+    <div id="footer" class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h1>Contacts</h1>
+          <div class="footerContent">
+            <p>
+              New Elsiebury <br />
+              634 Halvorson Estates Suite 039
+            </p>
+            <br />
+            <p><i class="fas fa-phone fa-lg"></i> 8 800 888 80 80</p>
+            <p><i class="fab fa-skype fa-lg"></i> mynx.skype</p>
+            <button type="button" class="btn btn-outline-primary">
+              Contact us
+            </button>
+            <button type="button" class="btn btn-outline-primary">
+              Visit Us
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <h1>Popular categories</h1>
+          <div class="footerContent">
+            <div class="leftCntrFooter">
+              <p><i class="fas fa-play"></i> <a href="#">Environment</a></p>
+              <p><i class="fas fa-play"></i> <a href="#">Fashion</a></p>
+              <p><i class="fas fa-play"></i> <a href="#">Photojournalism</a></p>
+              <p><i class="fas fa-play"></i> <a href="#">Citizen</a></p>
+              <p><i class="fas fa-play"></i> <a href="#">Technology</a></p>
+              <p><i class="fas fa-play"></i> <a href="#">World</a></p>
+            </div>
+            <div class="rightCntrFooter">
+              <p><i class="fas fa-play"></i> <a href="#">Internet</a></p>
+              <p><i class="fas fa-play"></i> <a href="#">News agencies</a></p>
+              <p><i class="fas fa-play"></i> <a href="#">Data</a></p>
+              <p>
+                <i class="fas fa-play"></i> <a href="#">Alternative Media</a>
+              </p>
+              <p><i class="fas fa-play"></i> <a href="#">Defamation</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h1>Recent posts</h1>
+          <div class="footerContent">
+            <p class="date"><i class="far fa-calendar"></i>28 Aug 2018</p>
+            <p>Althusser Competing Interpellations</p>
+            <p class="date"><i class="far fa-calendar"></i>21 Feb 2018</p>
+            <p>Enlightenment Is Not Just One State</p>
+          </div>
+        </div>
+      </div>
+      <div class="row bottomFooter">
+        <div class="col-lg-1">
+          <h1>.mynx</h1>
+        </div>
+        <div class="col-lg-5">
+          <h4>© 2020 All Rights Reserved</h4>
+        </div>
+        <div class="col-lg-6">
+          <p>.\\</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scripts -->
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+      integrity="sha512-7yA/d79yIhHPvcrSiB8S/7TyX0OxlccU8F/kuB8mHYjLlF1MInPbEohpoqfz0AILoq5hoD7lELZAYYHbyeEjag=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FontAwesome Script -->
+    <script
+      src="https://kit.fontawesome.com/e0de379f95.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Scripts -->
+    <script src="wwwroot/js/script.js"></script>
+  </body>
+</html>

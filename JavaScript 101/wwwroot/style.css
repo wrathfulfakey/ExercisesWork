@@ -1,0 +1,148 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+table {
+  counter-reset: rowNumber;
+}
+
+table thead tr th:first-child {
+  width: 10%;
+}
+
+table thead tr th:nth-child(2) {
+  width: 70%;
+}
+
+table thead tr th:last-child {
+  width: 20%;
+}
+
+.table td {
+  border-top: none;
+  height: 120px;
+}
+
+table tr > td:first-child {
+  counter-increment: rowNumber;
+  vertical-align: middle;
+  width: 10%;
+}
+
+table tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+tr td:nth-child(even) {
+  padding: 0;
+  width: 70%;
+}
+
+tr td:last-child {
+  width: 200px;
+  width: 20%;
+}
+
+label {
+  color: rgb(95, 95, 95);
+  width: 50%;
+  word-wrap: break-word;
+  font-size: 15px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.floatingDiv {
+  margin-top: 15px;
+  float: right;
+}
+
+button {
+  float: right;
+  margin-right: 6px;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.hideText {
+  margin-top: 36px;
+  opacity: 0;
+  transition: 1s;
+  padding-right: 2px;
+}
+
+.removeBtn:hover + .hideText {
+  opacity: 1;
+}
+
+tfoot {
+  float: right;
+}
+
+#printingTable {
+  margin-top: 100px;
+}
+
+#printedText {
+  padding-top: 25px;
+  color: rgb(95, 95, 95);
+  width: 70%;
+  font-size: 20px;
+  font-weight: normal;
+  word-wrap: break-word;
+}
+#printingTable tr td {
+  border-top: inherit;
+}
+
+#printingTable tr {
+  border-top: 1px solid rgb(185, 185, 185);
+}
+
+#printingTable thead tr th {
+  width: 10%;
+  vertical-align: middle;
+}
+
+#printingTable tr th:last-child {
+  width: 70%;
+}
+
+#printingTable tr td {
+  width: 10%;
+  vertical-align: middle;
+}
+
+#printingTable tr td:first-child {
+  vertical-align: middle;
+}
+
+#printingTable tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em;
+  font-size: 25px;
+}
+
+#printingTable tr td:last-child {
+  width: 70%;
+}
+
+.itemToDel {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  opacity: 0;
+}

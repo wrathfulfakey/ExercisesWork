@@ -1,0 +1,217 @@
+body {
+  color: #0d0080;
+  padding: 0;
+  margin: 0;
+  min-width: 900px;
+  font-size: 14px;
+}
+
+.formStage {
+  padding: 1px 2px 3px 4px;
+  display: none;
+}
+
+#errorMessage {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+textarea {
+  vertical-align: inherit;
+  width: 100%;
+  background: #f7f7f7;
+  border: 1px solid #e80000;
+  font-size: 16px;
+  margin: 0;
+  padding: 12px;
+  height: 200px;
+}
+
+select {
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  width: 100%;
+  font-size: 16px;
+  margin: 0;
+  padding: 12px;
+  height: 50px;
+  background: #f7f7f7;
+  border: 1px solid #c4c4c4;
+}
+
+input[type='text'] {
+  width: 100%;
+  font-size: 16px;
+  margin: 0;
+  padding: 12px;
+  height: 50px;
+  background: #f7f7f7;
+  border: 1px solid #c4c4c4;
+}
+
+#form-title {
+  color: #4c38ff;
+  font-size: 21px;
+  font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+#consentCheckBox input[type='checkbox'] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  transform: scale(1.5);
+  padding: 10px;
+}
+
+#consentCheckBox {
+  font-size: 21pt;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 5px;
+}
+
+#stageOneDate input {
+  --wp-admin-theme-color: #007cba;
+  --wp-admin-theme-color-darker-10: #006ba1;
+  --wp-admin-theme-color-darker-20: #005a87;
+  box-sizing: border-box;
+  color: #0c007a !important;
+  font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: none;
+  vertical-align: inherit;
+  width: 100%;
+  font-size: 16px;
+  margin: 0;
+  padding: 12px;
+  height: 50px;
+  background: #f7f7f7;
+  border: 1px solid #c4c4c4;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all 0.5s;
+}
+
+.nf-next-previous {
+  --wp-admin-theme-color: #007cba;
+  --wp-admin-theme-color-darker-10: #006ba1;
+  --wp-admin-theme-color-darker-20: #005a87;
+  color: #0d0080;
+  font-size: 14px;
+  cursor: auto;
+  text-align: left;
+  font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+  box-sizing: border-box;
+  content: '';
+  list-style-type: none !important;
+  margin: 20px 0 !important;
+  padding: 0 !important;
+}
+
+.nf-previous-item {
+  --wp-admin-theme-color: #007cba;
+  --wp-admin-theme-color-darker-10: #006ba1;
+  --wp-admin-theme-color-darker-20: #005a87;
+  cursor: auto;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+  color: #0d0080;
+  content: '';
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: visible;
+  overflow-y: hidden;
+  float: left;
+}
+
+.nf-next-item {
+  --wp-admin-theme-color: #007cba;
+  --wp-admin-theme-color-darker-10: #006ba1;
+  --wp-admin-theme-color-darker-20: #005a87;
+  cursor: auto;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+  color: #0d0080;
+  content: '';
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: visible;
+  overflow-y: hidden;
+  float: right;
+}
+
+.nf-previous {
+  --wp-admin-theme-color: #007cba;
+  --wp-admin-theme-color-darker-10: #006ba1;
+  --wp-admin-theme-color-darker-20: #005a87;
+  list-style-type: none !important;
+  vertical-align: middle;
+  font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 12px 18px;
+  background: #333;
+  border: 0;
+  color: #f7f7f7;
+  transition: all 0.5s;
+}
+
+.nf-next {
+  --wp-admin-theme-color: #007cba;
+  --wp-admin-theme-color-darker-10: #006ba1;
+  --wp-admin-theme-color-darker-20: #005a87;
+  list-style-type: none !important;
+  vertical-align: middle;
+  font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 12px 18px;
+  background: #333;
+  border: 0;
+  color: #f7f7f7;
+  transition: all 0.5s;
+}
+
+.required {
+  color: red;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #4caf50;
+  color: white;
+}
